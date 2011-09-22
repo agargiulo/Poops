@@ -9,6 +9,7 @@
 
 from BeautifulSoup import BeautifulSoup, NavigableString
 from sys import version
+import os
 from urllib2 import urlopen
 from time import ctime
 from ascii_poops import * #different ascii poops for the menu
@@ -95,21 +96,22 @@ class Restaurant(object):
 
     def construct_list(self):
         """Organize the list of items"""
-        print "\n"
+        output = "\n"
         if len(self.new_list) > 0:
             for item in self.new_list:
-                print item
+                output += item + "\n"
         elif not len(self.new_list) > 0:
             self.scrape_text()
             if len(self.contents) == 0:
-                print "There doesn't appear to be anything listed here"
+                output += "There doesn't appear to be anything listed here\n"
             else:
                 for i in self.contents:
                     self.new_list.append(i)
                 self.new_list.sort()
                 for j in self.new_list:
-                    print j
-        print "\n"
+                    output += j + "\n"
+        output += "\n"
+        os.system("echo \"" + output + "\"| less")
 
 BRICK_CITY = Restaurant("http://finweb.rit.edu/diningservices/brickcity")
 COMMONS = Restaurant("http://finweb.rit.edu/diningservices/commons")
