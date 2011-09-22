@@ -98,7 +98,7 @@ class Restaurant(object):
         """Organize the list of items"""
 
 		#because a clean screen is a happy screen
-		os.system("clear")
+        os.system("clear")
 
         output = "\n"
         if len(self.new_list) > 0:
