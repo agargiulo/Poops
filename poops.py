@@ -9,6 +9,7 @@
 
 from BeautifulSoup import BeautifulSoup, NavigableString
 from sys import version
+from sys import os
 from urllib2 import urlopen
 from time import ctime
 from ascii_poops import * #different ascii poops for the menu
@@ -122,14 +123,6 @@ RITZ = Restaurant("http://finweb.rit.edu/diningservices/ritzsportszone")
 RESTAURANTS = [BRICK_CITY, COMMONS, CROSSROADS, GLOBAL_VILLAGE, GRACIES,
                 RITZ]
 
-poops11 = """
-               ______ ______ ______ ______  _____
-              |   _  |  __  |  __  |   _  |/ ____|
-              |  |_) | |  | | |  | |  |_) | (___
-              |   ___| |  | | |  | |   ___|\___ \\
-              |  |   | |__| | |__| |  |    ____) |
-              |  |   |      |      |  |   |      |
-              |__|   |______|______|__|   |_____/ """
 
 HEADERS = [poops1, poops2, poops3, poops4, poops5, poops6, poops7, poops8,
            poops9, poops10, poops11]
