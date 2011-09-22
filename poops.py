@@ -9,7 +9,6 @@
 
 from BeautifulSoup import BeautifulSoup, NavigableString
 from sys import version
-from sys import os
 from urllib2 import urlopen
 from time import ctime
 from ascii_poops import * #different ascii poops for the menu
