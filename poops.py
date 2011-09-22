@@ -164,7 +164,7 @@ def main():
             RESTAURANTS[int(choice) - 1].construct_list()
 
             choice2 = raw_input("Hit the Enter key to go back to the menu, or"
-                + "'q' to quit. ")
+                + " 'q' to quit. ")
             if choice2 == "q":
                 return
 
