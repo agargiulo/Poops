@@ -97,7 +97,7 @@ class Restaurant(object):
     def construct_list(self):
         """Organize the list of items"""
 
-		#because a clean screen is a happy screen
+        #because a clean screen is a happy screen
         os.system("clear")
 
         output = "\n"
