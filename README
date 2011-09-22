@@ -1,7 +1,11 @@
-Parser Of On-campus Specials a.k.a. Poops
+Parser Of On-campus Preferred Specials a.k.a. Poops
 
-This is a web scraper and command prompt interface written in python to tell
-you what is being served at RIT restaurants.  This was originally intended to
-only be used by members of Computer Science House at the Rochester Institute of
-Technology, but my long-term plan is to make a web interface so that it is
-available to everyone.  
+This is a web scraper and command prompt interface to tell you what each of the
+restaurants on-campus at the Rochester Institute of Technology.  Currently, it
+is only usable by members of Computer Science House on the user machines, but
+my long-term plan is to make a web interface for it so that everyone can find
+out what is being served.  
+
+
+Written in python2.6
+Utilizes BeautifulSoup for web parsing
