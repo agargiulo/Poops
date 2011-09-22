@@ -96,6 +96,10 @@ class Restaurant(object):
 
     def construct_list(self):
         """Organize the list of items"""
+
+		#because a clean screen is a happy screen
+		os.system("clear")
+
         output = "\n"
         if len(self.new_list) > 0:
             for item in self.new_list:
@@ -162,14 +166,14 @@ def main():
     try:
         if int(choice) >= 1 and int(choice) <= 6:
             RESTAURANTS[int(choice) - 1].construct_list()
-
-            choice2 = raw_input("Hit the Enter key to go back to the menu, or"
-                + " 'q' to quit. ")
-            if choice2 == "q":
-                return
-
-            else:
-                main()
+# with the output piped to less, this section is not needed
+#            choice2 = raw_input("Hit the Enter key to go back to the menu, or"
+#                + " 'q' to quit. ")
+#            if choice2 == "q":
+#                return
+#
+#            else:
+            main()
         else:
             print "Oops! Please select choice 1,2,3,4,5,6 or q."
             cont = raw_input("Press the Enter key to continue... ")
